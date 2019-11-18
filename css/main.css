@@ -21,6 +21,10 @@ html {
   display: none;
 }
 
+.dino-wrap {
+  display: block;
+}
+
 img {
   display: block;
   width: 100%;
@@ -61,6 +65,7 @@ img {
 
 @media only screen and (min-width: 60em) {
 
+  .dino,
   .dino:first-child {
     display: block;
   }
