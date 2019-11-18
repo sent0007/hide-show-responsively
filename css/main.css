@@ -17,20 +17,42 @@ html {
   box-sizing: inherit;
 }
 
-.dino-wrap:nth-child(1,2) {
+.dino:nth-child(even) {
   display: none;
-
 }
 
-@media only screen and (min-width: 25em){
-  .dino-wrap {
-    width: 100%;
+img {
+  display: block;
+  width: 100%;
+}
 
+@media only screen and (min-width: 25em) {
+
+  .dino:nth-child(even) {
+    display: block;
+  }
+
+  .dino-wrap {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .dino {
-    width: 100%;
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 38em) {
+
+  .dino-wrap {
+    flex-wrap: nowrap;
+  }
+  .dino {
+    width: 33.33333%;
   }
 
+  .dino:first-child {
+    display: none;
   }
+
 }
